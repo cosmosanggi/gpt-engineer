@@ -37,7 +37,7 @@ class AI:
     def fassistant(self, msg):
         return {"role": "assistant", "content": msg}
 
-    def next(self, messages: list[dict[str, str]], prompt=None):
+    def next(self, messages, prompt=None):
         if prompt:
             messages += [{"role": "user", "content": prompt}]
 
